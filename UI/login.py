@@ -94,12 +94,12 @@ class Ui_Form(object):
         self.pushButton_2.clicked.connect(self.check)
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
+        
     def check(self):
         username = self.lineEdit_2.text()
         password = self.lineEdit.text()
         tag = 0
-        # if username == None | password == None:
-        #     self.passw.show()
+        #判断是否存在已注册的用户名
         try:
             f = open(self.userFile,'r',encoding = 'utf-8')
             for line in f:
@@ -115,10 +115,6 @@ class Ui_Form(object):
             self.close()
         else:
             self.passw.show()
-
-#前
-#E0FFFF
-        #美化
 
 
     def retranslateUi(self, Form):

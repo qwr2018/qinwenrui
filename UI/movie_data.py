@@ -196,7 +196,7 @@ class Ui_Form(object):
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
-    def getfile(self):
+    def getfile(self):#利用pdfkit和选择对话框生成报表pdf
         dlg = QFileDialog()
         dlg.setGeometry(QtCore.QRect(86,175, 1228, 488))
         dlg.setFileMode(QFileDialog.AnyFile)

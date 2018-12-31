@@ -84,7 +84,7 @@ class Ui_Form(object):
         self.pushButton.setText(_translate("Form", "确认"))
         self.label.setText(_translate("Form", "创造属于你的账号"))
 
-
+#注册账号
     def userRegister(self):
         self.username = self.lineEdit_4.text()
         self.password = self.lineEdit_3.text()
@@ -96,18 +96,16 @@ class Ui_Form(object):
                     line_new = line.split("#")
                     if line_new[0] == self.username:
                         self.flag = 1
-                        self.exist.show()
+                        self.exist.show()#账号已存在窗口提示
                         break
         except IOError:
             self.flag = 1
 
-        if self.flag == 0:
+        if self.flag == 0:#如果账户不存在，则注册，并将信息保存在User.txt文件里
             with open(self.userFile,'a',encoding = 'utf-8') as f:
                 temp = '\n'+self.username+'#'+self.password
                 f.write(temp)
             self.child.show()
-            # time.sleep(5)
-            #
             self.close()
 
 

@@ -139,10 +139,9 @@ class Ui_Form(object):
             a = df[df.年份==str(year)]
         else:
             a = df
-        a = a.sort_values('票房',ascending = False)
-        # print(a[:3].values[1][1])
-        name = []
-        v = []
+        a = a.sort_values('票房',ascending = False)#票房排序
+        name = []#电影名字列表
+        v = []#电影票列表
         for i in range(r):
             name.append(a[:r].values[i][0])
             v.append(a[:r].values[i][1])
