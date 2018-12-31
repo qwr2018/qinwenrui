@@ -30,8 +30,8 @@
 ### 完成的基本功能
 具有UI界面
 
-登录功能：UI文件夹里的login.py的98行的check函数
-注册功能及验错功能：UI文件夹里的register.py的88行的Register函数
+登录功能：软件文件夹里的login.py的98行的check函数
+注册功能及验错功能：软件文件夹里的register.py的88行的Register函数
 
 可视化功能，包括：电影词云、劳模、月度题材占比、季度题材占比、票房趋势变化
 电影词云：cloud.py的122行
@@ -48,6 +48,6 @@
 对电影的票房进行排序：movie_data.py的HorSectionClicked函数
 
 ### 实现方法
-运行UI文件夹中的main.py文件
-可视化文件保存在UI文件夹的graph文件夹中
-报表文件保存在UI文件夹的table文件夹中
+运行软件文件夹中的main.py文件
+可视化文件保存在软件文件夹的graph文件夹中
+报表文件保存在软件文件夹的table文件夹中
