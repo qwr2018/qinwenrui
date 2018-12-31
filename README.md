@@ -1,7 +1,6 @@
-#环境配置
+# 环境配置
 将“python所需要的库”文件夹中的文件夹放入python的lib的site-packages的文件夹中。
 
-# 完成的基本功能
 
 # 爬虫系统
 功能：
@@ -11,9 +10,9 @@
 创建可视化信息
 
 
-##实现方法：
+## 实现方法：
 
-###创建mysql数据库及表格
+### 创建mysql数据库及表格
 1.先运行creat_sql.py文件，将pymysql.connect()里的user和password分别改为自己数据库的用户名和密码
 2.运行creat_table.py，将pymysql.connect()里的user和password分别改为自己数据库的用户名和密码
 
