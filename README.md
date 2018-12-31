@@ -10,21 +10,21 @@
 创建可视化信息
 
 
-## 实现方法：
+### 实现方法：
 
-### 创建mysql数据库及表格
+#### 创建mysql数据库及表格
 1.先运行creat_sql.py文件，将pymysql.connect()里的user和password分别改为自己数据库的用户名和密码
 2.运行creat_table.py，将pymysql.connect()里的user和password分别改为自己数据库的用户名和密码
 
-###爬取数据
+#### 爬取数据
 运行crawler.py文件,将pymysql.connect()里的user和password分别改为自己数据库的用户名和密码
 
 
 # 软件部分 
-##环境配置
+### 环境配置
 在mysql workbench导入“数据库文件“文件夹中的sql文件，并将自己数据库的用户名和密码分别改为root和714511,或者在每个文件夹中的pymysql.connect()函数中将user和password参数分别改为'root'和'714511'
 
-##完成的基本功能
+### 完成的基本功能
 具有UI界面
 
 登录功能：UI文件夹里的login.py的98行的check函数
@@ -39,12 +39,12 @@
 
 生成报表功能：movie_data.py的199行
 
-##附加功能
+#### 附加功能
 查找电影信息，显示电影信息：movie_data.py的276行的findinfo函数
 根据标签进行搜索，标签包括电影分类、电影上映年份、演员：：movie_data的276行的findinfo函数
 对电影的票房进行排序：movie_data.py的HorSectionClicked函数
 
-##实现方法
+#### 实现方法
 运行UI文件夹中的main.py文件
 可视化文件保存在UI文件夹的graph文件夹中
 报表文件保存在UI文件夹的table文件夹中
